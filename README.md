@@ -33,7 +33,7 @@ Returns list of authors by name.
 `get_author_by_id(author_id: int)` 
 Gets author by index in authors object. Returns author object.
 
-[To be completed. ran out of time]
+**TO BE COMPLETED**
 `update_author(name: str, bio: str)` 
 
 `delete_author(name: str)`
