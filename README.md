@@ -33,7 +33,7 @@ Returns list of authors by name.
 `get_author_by_id(author_id: int)` 
 Gets author by index in authors object. Returns author object.
 
-** /* TODO Finish API Documentation */ **
+`/* TODO Finish API Documentation */`
 
 `update_author(name: str, bio: str)` 
 
