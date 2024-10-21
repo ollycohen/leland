@@ -25,31 +25,37 @@ From that point you can test the API methods from the command line. For example,
 
 ## API Documentation
 `create_author(name: str, bio: str)` 
-Creates an author with corresponding bio. Returns HTTP status 200 on success. 
+Creates an author with corresponding bio. Returns status code 201 on success. 
 
 `get_all_authors() -> list`
-Returns list of authors by name.
+Returns list of authors by name. TODO return HTTP status code also.
 
 `get_author_by_id(author_id: int)` 
-Gets author by index in authors object. Returns author object.
-
-`/* TODO Finish API Documentation */`
+Gets author by index in authors object. Returns author object and status code 200 if author exists. If author does not exist, returns status code 404.
 
 `update_author(name: str, bio: str)` 
+Updates author if exists and returns code 200. If author does not exist, returns 404.
 
-`delete_author(name: str)`
+`delete_author(name: str)` 
+Deletes author if exists and returns code 200. Else returns 404.
 
 `create_book(title: str, description: str, author: str,
                 published_date: datetime.date)`
+Creates book with `published_date` as datetime object. for example, `datetime.datetime(2020, 5, 17)`. Returns code 201 on success.
 
-`get_all_books() -> list`
+`get_all_books() -> list` 
+Returns list of books by titles. TODO return HTTP status also.
 
 `get_book_by_id(book_id: int) -> str`
+Returns book object and 200 if exists. Else, code 404.
 
 `update_book(title: str, description: str, author: str,
                 published_date: datetime.date)`
+Returns code 200 if book exists. Else code 404.
+
 
 `delete_book(title)`
+Returns code 200 if book exists. Else code 404.
 
 ## Testing
 
