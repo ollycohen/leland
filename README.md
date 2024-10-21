@@ -12,7 +12,7 @@ Next steps could involve setting up a local environment to run REST requests tha
 
 To run the API functions and unit tests, open the [repl.it](https://replit.com/@ollycohen/Books-API?s=app) and click run.
 
-To play with the API yourself, you can make a new tab in Repl.it, click "Shell", and type `python -i main.py`. 
+To play with the API functions yourself, you can make a new tab in Repl.it, click "Shell", and type `python -i main.py`. 
 From that point you can test the API methods from the command line. For example, 
 ```
 >>> create_author("Olly Cohen", "Olly writes a blog.")
