@@ -49,6 +49,14 @@ Gets author by index in authors object. Returns author object.
 
 `delete_book(title)`
 
-Testing
+## Testing
 
-Tools Used
+Most methods have corresponding tests in the main python file. Given more time, I would finish writing unit tests for all methods.
+You can test the methods yourself by starting an interactive session with the python file in Repl.it's shell `python -i main.py`
+
+## Tools Used
+
+This entire project was completed on Repl.it's iOS mobile app free version (I do not have access to my computer at the moment). 
+Repl.it mobile has AI code completion, which was a little buggy but mostly worked great. It definitely saved me time. 
+Repl.it free version also has limited use of an internal AI helper to help debug problems. I used that to help me with syntax a couple times until running out of uses.
+I used ChatGPT one time at the end to ask the easiest way to test individual functions from my python file within Repl.it.
