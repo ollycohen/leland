@@ -31,7 +31,7 @@ Creates an author with corresponding bio. Returns status code 201 on success.
 Returns list of authors by name. TODO return HTTP status code also.
 
 `get_author_by_id(author_id: int)` 
-Gets author by index in authors object. Returns author object and status code 200 if author exists. If author does not exist, returns status code 404.
+Gets author by index. Returns author object and status code 200 if author exists. If author does not exist, returns status code 404.
 
 `update_author(name: str, bio: str)` 
 Updates author if exists and returns code 200. If author does not exist, returns 404.
@@ -47,7 +47,7 @@ Creates book with `published_date` as datetime object. for example, `datetime.da
 Returns list of books by titles. TODO return HTTP status also.
 
 `get_book_by_id(book_id: int) -> str`
-Returns book object and 200 if exists. Else, code 404.
+Gets book by index. Returns book object and 200 if exists. Else, code 404.
 
 `update_book(title: str, description: str, author: str,
                 published_date: datetime.date)`
